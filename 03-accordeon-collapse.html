@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec x-collapse</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div class="accordeon">
+      <section x-data="{open:true}">
+        <button @click="open = !open">bouton 1</button>
+        <p x-show="open" x-collapse> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus unde a dolore voluptatibus totam, culpa, labore excepturi explicabo, voluptas laudantium. Blanditiis expedita tenetur rem, nostrum incidunt dicta quod possimus!</p>
+      </section>
+      <section x-data="{open:true}">
+        <button @click="open = !open">bouton 2</button>
+        <p x-show="open" x-collapse> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus unde a dolore voluptatibus totam, culpa, labore excepturi explicabo, voluptas laudantium. Blanditiis expedita tenetur rem, nostrum incidunt dicta quod possimus!</p>
+      </section>
+      <section x-data="{open:true}">
+        <button @click="open = !open">bouton 3</button>
+        <p x-show="open" x-collapse> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus unde a dolore voluptatibus totam, culpa, labore excepturi explicabo, voluptas laudantium. Blanditiis expedita tenetur rem, nostrum incidunt dicta quod possimus!</p>
+      </section>
+    </div>
   </body>
 </html>
